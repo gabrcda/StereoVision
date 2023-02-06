@@ -45,6 +45,5 @@ class StereoCam:
 
             cv.imshow("frame", frame) 
 
-            # Hit "q" to close the window
             if cv.waitKey(1) & 0xFF == ord('q'):
                 num = 3
