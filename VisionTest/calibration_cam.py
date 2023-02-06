@@ -40,8 +40,6 @@ for imgLeft, imgRight in zip(imagesLeft, imagesRight):
     # Find the chess board corners
     retL, cornersL = cv.findChessboardCorners(grayL, chessboardSize, None)
     retR, cornersR = cv.findChessboardCorners(grayR, chessboardSize, None)
-
-    #ERRO A PARTIR DAQUI!!!!! A RETIFICAÇÃO DAS IMAGENS ESTÁ RESULTANDO EM FALSE.
     print(retL, retR)
 
     # If found, add object points, image points (after refining them)
